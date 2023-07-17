@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="flex justify-center max-w-full py-2 bg-gradient-to-r from-indigo-600 to-indigo-900">
+        <h1 class="text-2xl font-semibold text-white">Weather Dashboard</h1>
+    </header>
+    <section id="search" class="flex-auto m-2">
+        <form id="search-form" class="flex-auto flex-col m-2 space-y-2">
+            <h2 class="flex-auto">Search For A city:</h2>
+            <input type="text" id="city-input" class="flex-auto p-2 border rounded-md border-gray-500">
+            
+            <button class="flex-auto">Search</button>
+        </form>
+        <ul id="search-history" class="border-t border-gray-500">
+
+        </ul>
+    </section>
+    <section id="weather" class="flex-auto">
+        <div id="city-now">
+
+        </div>
+        <div id="city-forecast">
+            <h3>5-Day Forecast:</h3>
+            <ul>
+                <li id="day-1"></li>
+                <li id="day-2"></li>
+                <li id="day-3"></li>
+                <li id="day-4"></li>
+                <li id="day-5"></li>
+            </ul>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
